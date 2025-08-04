@@ -27,7 +27,7 @@ body{
   text-align: center;
   position: relative;
   animation: flotarBurbuja 6s ease-in-out infinite;
-  font-family: 'Chewy', cursive;
+  font-family: 'Chewy';
 }
 
 @keyframes flotarBurbuja {
