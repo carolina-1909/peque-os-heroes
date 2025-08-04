@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Pequeños Héroes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <h1>🔒 Zona Solo para Personal Autorizado</h1>
+    <div id="login-admin">
+      <p>Ingresa la clave para acceder al panel:</p>
+      <input type="password" id="clave-admin" placeholder="Clave de acceso" />
+      <button id="btn-ingresar">Ingresar</button>
+    </div>
+
+    <div id="panel-admin" style="display: none;">
+      <h2>👥 Registros de Pacientes</h2>
+      <div id="lista-registros"></div>
+      <button id="btn-salir">Cerrar sesión 🔙</button>
+
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

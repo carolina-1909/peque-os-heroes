@@ -1,0 +1,212 @@
+body {
+  margin: 0;
+  font-family: 'Chicle', cursive;
+  overflow-x: hidden;
+}
+
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.perfil-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  flex-wrap: wrap;
+}
+
+.perfil-logo img {
+  max-width: 450px;
+  filter: drop-shadow(2px 2px 4px #000000);
+}
+
+
+
+.perfil-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 40%;
+  overflow: hidden;
+  border: 5px solid #413dff;
+  box-shadow: 0 0 20px rgba(25, 0, 255, 0.8);
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(111, 95, 184, 0.808);
+}
+
+
+
+.perfil-foto img:hover {
+  transform: scale(1.05);
+}
+
+.perfil-datos {
+  background: rgba(255, 255, 255, 0.473);
+  margin: 1rem auto;
+  padding: 1.5rem;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(9, 11, 175, 0.822);
+  animation: aparecer 1s ease-in-out;
+}
+
+.perfil-nombre {
+  font-size: 3rem;
+  color: #fc0000;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.perfil-datos ul {
+  list-style: none;
+  padding: 0;
+}
+
+.perfil-datos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px dotted #161515;
+  font-size: 1.5rem;
+}
+
+.perfil-datos li strong {
+  flex: 3;
+  color: #000000;
+}
+
+.perfil-datos li span {
+  flex: 1;
+  text-align: right;
+  color: #000;
+}
+
+
+.perfil-botones {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.perfil-btn {
+  background-color: #fbff00c5;
+  color: #000;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #312908;
+  border: 2px solid #ecaa25;
+}
+
+.perfil-btn:hover {
+  background-color: #f2f700;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ffdd57;
+}
+
+.atribucion {
+  text-align: center;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.atribucion a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .perfil-encabezado {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .perfil-foto img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .perfil-nombre {
+    font-size: 1.6rem;
+  }
+
+  .perfil-btn {
+    width: 80%;
+    text-align: center;
+  }
+}
+
+#foto-perfil {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  object-position: center;
+  display: block;
+}
+
+.perfil-foto {
+  position: relative;
+  display: inline-block;
+}
+
+#estrella-decorativa {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 60px;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.boton-salir {
+  display: block;
+  margin: 30px auto 0 auto; 
+  background-color: #7873b9bd;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.boton-salir:hover {
+  background-color: #4744e7;
+  transform: scale(1.05);
+}
+
+
+

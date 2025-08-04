@@ -1,0 +1,174 @@
+/* 🌌 Fondo animado */
+
+body{
+  overflow: hidden;  /* ← Esto bloquea el scroll */
+}
+#videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+/* 🪄 Contenedor mágico */
+.contenedor {
+  background: linear-gradient(135deg, #9899f06b, #a8a3e6);
+  border: 2px dotted #0f0ccf;
+  box-shadow: 0 0 25px rgb(0, 4, 255);
+  animation: brillar 3s infinite ease-in-out;
+  border-radius: 60px 20px 60px 20px;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  animation: flotarBurbuja 6s ease-in-out infinite;
+  font-family: 'Chewy', cursive;
+}
+
+@keyframes flotarBurbuja {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ✨ Logo mágico */
+.logo-flotante {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logo-flotante img {
+  width: 300px;
+  height: auto;
+  padding: 20px;
+
+}
+
+@keyframes brillar {
+  0%, 100% {
+    box-shadow: 0 0 20px #fff176, 0 0 40px #ffeb3b;
+  }
+  50% {
+    box-shadow: 0 0 30px #fff59d, 0 0 60px #fff176;
+  }
+}
+
+/* 🎨 Título con magia */
+.titulo {
+  font-size: 3rem;
+  color: #2a04ff;
+  text-shadow: 2px 2px 4px #ffd700;
+  margin-bottom: 20px;
+  animation: brilloTexto 3s infinite;
+
+}
+.titulo, .nombre-proyecto {
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+@keyframes brilloTexto {
+  0%, 100% { color: #ff4081; }
+  50% { color: #ff80ab; }
+}
+
+.nombre-proyecto {
+  color: #3f51b5;
+  font-size: 2.3rem;
+  display: inline-block;
+  animation: zoomIn 1.2s ease;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* 📝 Descripción */
+.descripcion {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.boton {
+  display: inline-block;
+  font-size: 18px;
+  padding: 12px 24px;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+  max-width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.boton:hover {
+  transform: scale(1.05);
+}
+
+
+.boton:hover {
+  background-color: #0346ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 26, 255, 0.2);
+}
+
+/* 📜 Atribución */
+.atribucion {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px black;
+  z-index: 5;
+}
+
+.atribucion a {
+  color: #ffe600;
+  text-decoration: none;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .contenedor {
+    margin: 100px 20px;
+    padding: 30px 20px;
+  }
+
+  .titulo {
+    font-size: 2.2rem;
+  }
+
+  .nombre-proyecto {
+    font-size: 1.8rem;
+  }
+
+  .descripcion {
+    font-size: 1.1rem;
+  }
+
+  .boton {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .logo-flotante img {
+    width: 300px;
+  }
+}
+

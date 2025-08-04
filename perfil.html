@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil del Pequeño Héroe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/perfil.css" />
+</head>
+<body>
+  <video autoplay muted loop id="videoFondo">
+  <source src="video-fondo/fondo-nave.mp4" type="video/mp4">
+</video>
+
+ <!-- 🔝 Sección superior: logo y foto -->
+<section class="perfil-encabezado">
+  <div class="perfil-logo">
+    <img src="https://clinicamedicalduarte.com/wp-content/uploads/2022/12/imagotipo_cmd@4x.png" alt="Logo Clínica" />
+  </div>
+  <div class="perfil-foto">
+    <img id="foto-perfil" src="img/default-avatar.png" alt="Foto de perfil" />
+      <img id="estrella-decorativa" src="https://w7.pngwing.com/pngs/596/1/png-transparent-cartoon-stars-cartoon-star-material.png" alt="Estrella mágica" />
+    <input type="file" id="input-cambiar-foto" accept="image/*" style="display: none;" />
+  </div>
+</section>
+
+
+  <!-- 🧾 Datos del paciente -->
+  <section class="perfil-datos">
+    <h1 id="nombre-perfil" class="perfil-nombre">Pequeño Héroe</h1>
+    <ul>
+      <li><strong>Tipo de identificación:</strong> <span id="tipo-id-perfil"></span></li>
+      <li><strong>Número de identificación:</strong> <span id="numero-id-perfil"></span></li>
+      <li><strong>Habitación:</strong> <span id="habitacion-perfil"></span></li>
+      <li><strong>Servicio hospitalario:</strong> <span id="servicio-perfil"></span></li>
+      <li><strong>Acudiente:</strong> <span id="acudiente-perfil"></span></li>
+      <li><strong>Parentesco:</strong> <span id="parentesco-perfil"></span></li>
+    </ul>
+  </section>
+  <section class="perfil-botones">
+  <a href="juegos/wordwall/juegos.html" class="perfil-btn">🎲 Jugar</a>
+  <a href="videos/videos.html" class="perfil-btn">🎥 Ver Videos</a>
+  <a href="derechos/derechos.html" class="perfil-btn">📜 Derechos y Deberes</a>
+</section>
+
+ <button id="cerrar-sesion" class="boton-salir">🔒 Cerrar sesión</button>
+
+
+<footer class="atribucion">
+  Video de fondo por 
+  <a href="https://es.vecteezy.com/video/3316275-dibujos-animados-fondo-nave-espacial-animacion-paralaje" 
+     target="_blank" rel="noopener noreferrer">
+    Vecteezy
+  </a>
+</footer>
+
+
+  <script src="perfil.js"></script>
+</body>
+</html>
+

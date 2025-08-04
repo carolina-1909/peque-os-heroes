@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - Pequeños Héroes 📝</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/registro.css" />
+
+</head>
+<body>
+
+  <!-- 🎬 Fondo animado de video -->
+  <video autoplay muted loop id="videoFondo">
+    <source src="video-fondo/fondo-espacial.mp4" type="video/mp4">
+  </video>
+
+  <!-- 📝 Contenedor de formulario -->
+  
+<!-- 📝 Formulario de registro -->
+<div class="formulario-contenedor">
+  <h1 class="titulo">📝 Registro de Pequeños Héroes</h1>
+
+  <form id="form-registro" class="formulario">
+    <label for="nombre">👦 Nombre completo:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="tipo-id">🆔 Tipo de identificación:</label>
+    <select id="tipo-id" required>
+      <option value="">Selecciona...</option>
+      <option value="TI">Tarjeta de Identidad</option>
+      <option value="RC">Registro Civil</option>
+      <option value="CC">Cédula</option>
+    </select>
+
+    <label for="numero-id">🔢 Número de identificación:</label>
+    <input type="text" id="numero-id" required>
+
+    <label for="habitacion">🛏 Habitación:</label>
+    <input type="text" id="habitacion" required>
+
+    <label for="servicio">🏥 Servicio hospitalario:</label>
+    <select id="servicio" required>
+      <option value="">Selecciona...</option>
+      <option value="uci">UCI Pediátrica</option>
+      <option value="hospitalizacion">Hospitalización</option>
+      <option value="consulta">Consulta Externa</option>
+      <option value="urgencias">Urgencias</option>
+      <option value="cirugia">Cirugía</option>
+      <option value="Otro">Otro</option>
+    </select>
+
+    <!-- 🌟 Campo extra solo si elige "Otro" -->
+    <div id="otro-servicio-container" style="display: none;">
+      <label for="otro-servicio">✏️ Especifique el servicio:</label>
+      <input type="text" id="otro-servicio">
+    </div>
+
+    <label for="acudiente">👨‍👩‍👧 Nombre del acudiente:</label>
+    <input type="text" id="acudiente" required>
+
+    <label for="parentesco">🧩 Parentesco con el paciente:</label>
+    <select id="parentesco" required>
+      <option value="">Selecciona...</option>
+      <option value="mamá">Mamá</option>
+      <option value="papá">Papá</option>
+      <option value="abuela">Abuela</option>
+      <option value="abuelo">Abuelo</option>
+      <option value="tía">Tía</option>
+      <option value="tío">Tío</option>
+      <option value="hermana">Hermana</option>
+      <option value="hermano">Hermano</option>
+      <option value="cuidador">Cuidador(a)</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <button type="submit" class="boton">🚀 Registrar Héroe</button>
+  </form>
+</div>
+<footer class="atribucion">
+    <p>
+      Fondo animado por 
+      <a href="https://www.vecteezy.com/video/3439676-dibujos-animados-fondo-nave-espacial-y-planetas" target="_blank">
+        Vecteezy
+      </a>
+    </p>
+<script src="registro.js"></script>
+
+</body>
+</html>
+
+

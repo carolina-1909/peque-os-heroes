@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Chicle', cursive;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #0a22f7;
+  }
+  
+  .contenedor-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Columnas contenedoras */
+  .caja-derechos,
+  .caja-deberes {
+    width: 80%;
+    max-width: 400px;
+    background-color: #fffefc96;
+    padding: 15px;
+    border: 4px double #f8e800;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgb(228, 198, 27);
+    animation: flotar 4s ease-in-out infinite;
+    }
+  
+  .columna h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #1976d2;
+  }
+  
+  .columna.deberes h2 {
+    color: #388e3c;
+  }
+  
+  .caja-lista {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  
+  .numero-circulo {
+    width: 28px;
+    height: 28px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 28px;
+    background-color: #fff;
+    color: #000;
+    flex-shrink: 0;
+  }
+  
+  .caja-contenido {
+    padding: 8px 12px;
+    background-color: #fff;
+    font-size: 0.70em;
+    border: 2px dashed #2196f3;
+    border-radius: 6px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: #0f0f0f;
+    line-height: 1.1;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.747);
+  }
+  
+  .caja-verde {
+    border-color: #4caf50;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contenedor-columnas {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .caja-derechos,
+    .caja-deberes {
+      width: 60%;
+    }
+  }
+  
+  /* Efecto flotante opcional */
+  @keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+  }
+  .decoracion-esquina {
+    width: 70px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    transform: rotate(-10deg);
+    z-index: 10;
+  }
+  
+  /* Asegura que la caja tenga posición relativa */
+  .caja-derechos,
+  .caja-deberes {
+    position: relative;
+  }
+
+  /* Estilo del logo */
+#logo-heroes {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto 20px auto;
+    transition: transform 0.3s ease;
+  }
+  
+  #logo-heroes:hover {
+    transform: scale(1.08) rotate(-1deg);
+  }
+  
+  #videoFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.btn-volver {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  background-color: #ffdd57;
+  color: #000;
+  font-family: 'Chicle', cursive;
+  font-size: 1.2rem;
+  border: 3px solid #fcbf49;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 10px #ffd166;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.atribucion {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px black;
+  z-index: 5;
+}
+
+.atribucion a {
+  color: #ffe600;
+  text-decoration: none;
+}
+  
+          
+        
+
+    
