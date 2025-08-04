@@ -13,7 +13,7 @@
 /* 🌈 Fuente y layout general */
 body {
   margin: 0;
-  font-family: 'Chicle', cursive;
+  font-family: 'Chicle';
   display: flex;
   flex-direction: column;
   align-items: center;
